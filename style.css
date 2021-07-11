@@ -1,0 +1,153 @@
+.{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #FCF0CC;
+	font-family: 'loto', sans-serif;
+	margin: 0;
+}
+
+nav{
+	background-color: #861657 ;
+	color: #fff;
+	justify-content: flex-end;
+	padding: 15px;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
+nav a{
+	color: #fff;
+	margin-left: 30px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	text-decoration: none;
+	border-bottom: 3px solid #fff;
+}
+
+header{
+	background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80);
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 1;
+}
+
+header::after{
+    content: '';
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+header h1{
+	font-size: 60px;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+
+header p{
+	font-size: 30px;
+	margin: 0;
+}
+
+section{
+	padding: 40px;
+	text-align: center;
+}
+
+section h2{
+	margin: 0;
+}
+
+section p{
+	margin-top: 0;
+}
+
+.project-container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	max-width: 1000px;
+	margin: 20px auto 0;
+}
+
+.project{
+	max-width: 250px;
+	margin: 10px;
+}
+
+.project p{
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.project a {
+	text-decoration: none;
+	color: #000;
+}
+
+.project a:hover{
+	border-bottom: 3px solid #000;
+}
+
+.project img{
+	max-width: 100%;
+}
+
+.bg-pinkish{
+	background-color: #A64253;
+	color: #fff;
+}
+
+.social-links{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	padding: 0;
+	margin-right: 20px;
+}
+
+.social-links a{
+	color: #fff;
+	font-size: 30px;
+	margin: 0 10px;
+
+}
+
+footer{
+	background-color: #861657 ;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}	
+
+
+
+
+@media and screen (max-width: 440px){
+	section{
+		padding: 20px;
+		text-align: center;
+	}
+
+
+}
